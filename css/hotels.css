@@ -1,0 +1,74 @@
+ul { 
+	list-style-type: none;
+}
+
+table {
+	border: 1px #333 solid;
+	font-size: 16px;
+	width: 100%;
+}
+
+table td, table th {
+	padding: 4px;
+}
+
+.main-figure {
+	font-weight: bolder;
+}
+
+thead th, tfoot td {
+	background-color: #444;
+	color: #ddd;
+	font-size: 18px;
+	text-align: center;
+}
+
+#result .name { 
+	width: 28%;
+}
+
+table .action {
+	cursor: pointer;
+}
+
+table .action:hover {
+	background-color: #555;
+}
+
+thead th.sort {
+	background-color: #666;
+}
+
+tfoot td {
+	text-align: center;
+	padding: 0;
+}
+
+.page-nav {
+	margin: 0 8px 0 8px;
+	padding: 0 24px 0 24px;
+}
+
+fieldset legend {
+	text-align: right;
+}
+
+.filter {
+	margin-bottom: 40px;
+}
+
+.filter .field > * {
+	display: block;
+	text-align: center;
+}
+
+.filter .field {
+	float: left;
+	margin-right: 12px;
+}
+
+.filter .field-right {
+	float: right;
+	margin-top: 12px;
+	clear: both;
+}

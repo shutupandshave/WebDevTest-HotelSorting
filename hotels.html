@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/hotels.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="content" class="container">
+      <h1>Search results</h1>
+
+      <div class="filter">
+        <form>
+          <fieldset>
+            <legend><span class="glyphicon glyphicon-filter"></span> Filter</legend>
+            <span class="field">
+              <label for="filter-name">Name </label>
+              <input class="form-control" name="filter-name" type="text" id="filter-name" />
+            </span>
+
+            <span class="field">
+              <label for="filter-stars">Min. stars </label>
+              <select class="form-control" name="filter-stars" id="filter-stars">
+                <option value="">Select</option>
+                <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                <option value="4">&#9733;&#9733;&#9733;&#9733;</option>
+                <option value="3">&#9733;&#9733;&#9733;</option>
+                <option value="2">&#9733;&#9733;</option>
+                <option value="1">&#9733;</option>
+              </select>
+            </span>
+
+            <span class="field">
+              <label for="filter-urating">Min. user rating </label>
+              <input class="form-control" name="filter-urating" type="text" id="filter-urating" />
+            </span>
+
+            <span class="field">
+              <label for="filter-cost">Min. cost </label>
+              <input class="form-control" name="filter-cost" type="text" id="filter-cost" />
+            </span>
+
+            <span class="field-right">
+              <button type="button" class="btn btn-default" id="clear-filter">Reset</button>
+              <button type="button" class="btn btn-primary" id="apply-filter">Apply</button>
+            </span>
+          </fieldset>
+        </form>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2" class="sorter action" data-sort-by="Name">Name <span class="glyphicon glyphicon-sort"></span></th>
+            <th class="sorter action" data-sort-by="MinCost">Cost <span class="glyphicon glyphicon-sort"></span></th>
+            <th class="sorter action" data-sort-by="Distance">Distance <span class="glyphicon glyphicon-sort"></span></th>
+            <th>Type</th>
+            <th>Location</th>
+            <th class="sorter action" data-sort-by="Stars">Stars <span class="glyphicon glyphicon-sort"></span></th>
+            <th class="sorter action" data-sort-by="UserRating">User rating <span class="glyphicon glyphicon-sort"></span></th>
+          </tr>
+        </thead>
+        <tbody id="result">
+          <tr class="hidden template">
+            <td class="image"><img width="80" height="80" /></td>
+            <td class="name">Name</td>
+            <td class="cost">&pound; 0.00</td>
+            <td class="distance">0.0</td>
+            <td class="type">Type</td>
+            <td class="location">Location</td>
+            <td class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+            <td class="urating" title="Great">0</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="8">
+              <span class="action page-nav" id="page-nav-first">
+                <span class="glyphicon glyphicon-fast-backward"></span> First
+              </span>
+              <span class="action page-nav" id="page-nav-back">
+                <span class="glyphicon glyphicon-step-backward"></span> Back
+              </span>
+              <span>
+                Page <span class="current-page">1</span> of <span class="total-page">1</span>
+              </span>
+              <span class="action page-nav" id="page-nav-next">
+                Next <span class="glyphicon glyphicon-step-forward"></span>
+              </span>
+              <span class="action page-nav" id="page-nav-last">
+                Last <span class="glyphicon glyphicon-fast-forward"></span>
+              </span>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <nav><ol class="page"></ol></nav> 
+    </div>
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/hotels.js"></script>
+  </body>
+</html>

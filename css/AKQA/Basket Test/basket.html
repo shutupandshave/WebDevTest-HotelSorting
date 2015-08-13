@@ -1,0 +1,94 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>AKQA Basket Test</title>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/modernizr-latest.js" type="text/javascript"></script> 
+<script src="js/akqa.js" type="text/javascript"></script>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/akqa.css" type="text/css">
+
+</head>
+<!-- Created with Webstorm version 9 -->
+<!-- $ItemNAME, etc indicated values I would expect from the server -->
+<body>
+<header>
+	<h1>AKQA</h1>
+	<h2>Your Basket</h2>
+</header>
+<section>
+	<h3>Items you have added to your basket are shown below.<br />
+	Adjust the quantities or remove items before continuing your purchase.</h3>
+	<form action="basket.jsp" method="post" id="basket_form">
+		<table>
+		  <thead>
+			  <tr>
+				  <th>Product</th>
+				  <th>Price</th>
+				  <th>Qty</th>
+				  <th>Cost</th>
+				  <th></th>
+			  </tr>
+		  </thead>
+		  <tbody class="basket_table">
+			  <tr>
+				  <td>Cotton T-Shirt, Medium</td>
+				  <td>&pound;1.99</td>
+				  <td><label class="visually-hidden" for="itemID-1">$ItemNAME Quantity</label><input id="itemID-1" name="itemID-1" type="number" max="10" value="1" aria-live="assertive" aria-valuenow="1" aria-valuemin="1" aria-valuemax="10">
+						<a href="basket.jsp?$itemID+add" class="add" title="Add another $ItemNAME to the basket" aria-controls="itemID-1">Add</a>
+						<a href="basket.jsp?$itemdID+subtract" class="subtract" title="Subtract a $ItemNAME from the basket" aria-controls="itemID-1">Subtract</a>
+				  </td>
+				  <td>&pound;</td>
+				  <td><input type="hidden" value="$itemID_1"><a href="basket.jsp?$itemID+delete" class="delete" title="remove all $ItemNAME from the basket">Delete</a></td>
+			  </tr>
+			  <tr>
+				  <td>Baseball Cap, One Size</td>
+				  <td>&pound;2.99</td>
+				  <td><label class="visually-hidden" for="itemID-2">$ItemNAME Quantity</label><input id="itemID-2" name="itemID-2" type="number" value="2" aria-live="assertive" aria-valuenow="2" aria-valuemin="1" aria-valuemax="10">
+						<a href="basket.jsp?$itemID+add" class="add" title="Add another $ItemNAME to the basket" aria-controls="itemID-2">Add</a>
+						<a href="basket.jsp?$itemID+subtract" class="subtract" title="Subtract a $ItemNAME from the basket" aria-controls="itemID-2">Subtract</a>
+				  </td>
+				  <td>&pound;</td>
+				  <td><input type="hidden" value="$itemID_2"><a href="basket.jsp?$itemID+delete" class="delete" title="remove all $ItemNAME from the basket">Delete</a></td>
+			  </tr>
+			  <tr>
+				  <td>Swim Shorts, Medium</td>
+				  <td>&pound;3.99</td>
+				  <td><label class="visually-hidden" for="itemID-3">$ItemNAME Quantity</label><input id="itemID-3" name="itemID-3" type="number" value="1" aria-live="assertive" aria-valuenow="1" aria-valuemin="1" aria-valuemax="10">
+						<a href="basket.jsp?$itemID+add" class="add" title="Add another $ItemNAME to the basket" aria-controls="itemID-3">Add</a>
+						<a href="basket.jsp?$itemID+subtract" class="subtract" title="Subtract a $ItemNAME from the basket" aria-controls="itemID-3">Subtract</a>
+				  </td>
+				  <td>&pound;</td>
+				  <td><input type="hidden" value="$itemID_3"><a href="basket.jsp?$itemID+delete" class="delete" title="remove all $ItemNAME from the basket">Delete</a></td>
+			  </tr>
+		 </tbody>
+		 <tfoot>
+			  <tr>
+				  <td colspan="3">Subtotal</td>
+				  <td colspan="2">&pound;</td>
+			  </tr>
+			  <tr>
+				  <td colspan="3">VAT @ 20%</td>
+				  <td colspan="2">&pound;</td>
+			  </tr>
+			  <tr>
+				  <td colspan="3">Total Cost</td>
+				  <td colspan="2">&pound;</td>
+			  </tr>
+		 </tfoot>
+		</table>
+		<button class="buy button">Buy Now &raquo;</button>
+	</form>
+	
+</section>
+<footer>
+	<p><strong>&copy; 2013 AKQA Ltd.</strong> Registered in England: 2964394</p>
+</footer>
+</body>
+</html>

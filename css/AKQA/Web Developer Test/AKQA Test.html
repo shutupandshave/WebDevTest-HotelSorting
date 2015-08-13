@@ -1,0 +1,67 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="AQKA Test webpage">
+<meta name="author" content="James Lawrence">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AQKA Test</title>
+
+<link rel="stylesheet" href="assets/akqa.css" type="text/css">
+</head>
+
+<body>
+<!-- if using HTML 5 tags, I would be inserting <header> tags around the logo, nav tags round the nav then sectioning up the content etc -->
+<div class="logo"></div>
+<!-- using HTML doctype, but with HTML 4 tags due to browser support -->
+<!-- Could put title tags on the menu links but a bit tough without context, so no point repeating "menu 1" - that would just annoy a JAWS user -->
+<ul class="nav">
+	<li><a href="#">Menu 1</a></li>
+	<li><a href="#">Menu 2</a></li>
+	<li><a href="#">Menu 3</a></li>
+</ul>
+<h1>About AKQA</h1>
+<!-- was unsure why the heading below was white and the others grey as they appear to have the same weighting, seemed inconsistent - would normally have checked with designer, but styled this the same as the other headings for consistency -->
+<h2>What we do</h2>
+<!-- Text in GD slightly over-runs boundries, would check with designer again, but going for consistency and bringing it into the correct grid -->
+<p><span>AKQA's</span> e-commerce solutions are inspired by the innovative application of technology. We integrate with CRM systems and databases to provide a seamless customer experience. <span>AKQA</span> manages technology projects using structured development processes and our QA team ensures that the final implementation is delivered to the highest quality standards. We also provide clients with a high-quality, ISO 9000-certified, managed hosting service.</p>
+<h3>Our focus</h3>
+<ul>
+	<li>Interactive</li>
+	<li>Mobile</li>
+	<li>Technology</li>
+</ul>
+<!-- once again, no title the link is descriptive enough -->
+<p><a href="#">Click here to download a PDF of our recent work</a></p>
+<h2 class="news">News</h2>
+<div class="newsItem">
+	<p><span>AKQA's</span> site for NBA superstar Lebron Spaß <a href="http://www.lebron23-23.com">www.lebron23-23.com</a> was featured in USA today on January 5, 2007. James and Coca-Cola's Sprite plan to announce a national contect Friday inviting consumers to create theme songs for new Sprite TV commercials airing during NBA All-Star Weekend next month. </p>
+	<q>"I wanted to do something new and different. Sprite came to me with the idea. I thought it was cool. Without the fans, there's no players."</q>
+</div>
+<h2>More Information</h2>
+<!-- Reduced margin here - ignoring it due to lack of designer to check with :) -->
+<p>For more information about the services AKQA offer, and how we can work with you, please provide us with the following items of information.</p>
+<p><small>Items marked with * are required fields</small></p>
+<form method="post" action="#">
+	<div>
+		<label for="name">Contact name*:</label>
+		<input type="text" id="name" name="name" class="validateItem">
+	</div>
+	<div>
+		<label for="email">Contact email address*:</label>
+		<input type="text" id="email" name="email" class="validateItem">
+	</div>
+	<div>
+		<label for="ctn">Contact phone number:</label>
+		<input type="text" name="ctn" id="ctn">
+	</div>
+	<input type="submit" class="submit" value="Submit">
+</form>
+<script src="assets/jquery-1.7.1.min.js" type="text/javascript"></script> 
+<script src="assets/akqa.js" type="text/javascript"></script>
+</body>
+</html>

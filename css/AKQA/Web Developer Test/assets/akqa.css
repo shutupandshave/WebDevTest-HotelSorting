@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#fff;background:#000 url(bg.jpg) no-repeat 0 0;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+
+body {padding-left:35px;font: 0.75em Arial, Helvetica, sans-serif;}
+
+.logo {height:53px;width:105px;background: url(aqka-logo.gif) no-repeat 0 0;text-indent:-100000px;margin-top:17px}
+
+/* Nav */
+ul.nav li {display: inline-block;width:75px;height:18px;background:url(menu_bg.gif) repeat-x 0 0;border-top:1px solid #eae8e8;border-left:1px solid #eae8e8;margin-right:2px;text-align:center;margin-top:37px;padding-top:3px;}
+ul.nav li a, ul.nav li a:link, ul.nav li a:visited {color:#fff;text-decoration:none;}
+ul.nav li a:hover {text-decoration:underline;}
+.ie6 ul.nav li, .ie7 ul.nav li {display:inline}
+
+/* Headings */
+h1, h2, h3, h4 {font-weight:bold;}
+h1 {color:#e91a57;font-size:200%;margin-top:18px;}
+h2 {color:#ccc;font-size:150%;margin:18px 0;}
+h3 {color:#fff000;font-size:116.7%;margin-top:18px;}
+
+
+/* content */
+
+ul {list-style-type: disc;list-style-position: inside;margin-top:8px;margin-bottom:18px;}
+.hidden {display:none}
+p,q {width:354px;display:block;margin-top:15px;}
+p span {font-weight:bold}
+a, a:visited, a:link {color:#f6ff00}
+
+p.toggleNews {margin-bottom:14px;}
+p.toggleNews a:link, p.toggleNews a:visited, p.toggleNews a {padding-left:20px;background:url(arrow.gif) 0 3px no-repeat;color:#e91a57;font-weight:bold;text-decoration:none;}
+q {margin-left:30px;}
+
+.newsItem {color:#ccc}
+.newsItem p span {color:#fff}
+
+/* Form */ 
+form {margin-top:14px;}
+label {display:block;margin-bottom:3px;}
+input {margin-bottom:10px;width:237px}
+input#name {width:161px;}
+.submit {width:auto;padding:3px 5px}
+.errorMSG {color:#F00;font-weight:bold;margin-top:-8px;margin-bottom:10px;}
+
+/* would use media queries for other devices here but not specified in the browser list 
+@media only screen and (max-device-width: 240px) {
+p,q {width:224px;}
+input {width:200px}
+*/
